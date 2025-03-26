@@ -33,7 +33,7 @@ build/
 !**/src/test/**/build/
 
 ### Game Data ###
-src/main/java/com/javium/data/
+src/main/java/com/javium/data/input_mapping.txt
 
 ### VS Code ###
 .vscode/
