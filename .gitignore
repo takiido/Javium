@@ -32,6 +32,9 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+### Game Data ###
+src/main/java/com/javium/data/
+
 ### VS Code ###
 .vscode/
 

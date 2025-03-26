@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 
 
 public class FileManager {
@@ -14,7 +15,9 @@ public class FileManager {
         System.out.println("Hello World!");
     }
         
-    public static void ReadFile(String filename) {
+    public static ArrayList<String> ReadFile(String filename) {
+        ArrayList<String> content = new ArrayList<String>();
+
         System.out.println("Reading file: " + filename);
     
         try {
@@ -22,7 +25,7 @@ public class FileManager {
             String line = br.readLine();
 
             while (line != null) {
-                System.out.println(line);
+                content.add(line);
                 line = br.readLine();
             }
 
@@ -32,6 +35,7 @@ public class FileManager {
         }
 
         System.out.println("File " + filename + " read!");
+        return content;
     }
 
     public static void WriteFile(String filename, String[] content) {
