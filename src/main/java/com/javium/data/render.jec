@@ -1,0 +1,20 @@
+renderer_settings
+[
+    windows
+    [
+        game
+        [
+            window_w:800
+            window_h:600
+            window_title:"Game"
+            is_editor:false
+        ]
+        node_editor
+        [
+            window_w:300
+            window_h:800
+            window_title:"Node editor"
+            is_editor:true
+        ]
+    ]
+]
